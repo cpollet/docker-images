@@ -1,3 +1,3 @@
 ```
-$ docker build -t httpd-proxy .
+$ docker build -t apache-httpd .
 ```
