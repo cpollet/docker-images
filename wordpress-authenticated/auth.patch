@@ -1,0 +1,12 @@
+--- original	2016-11-17 21:18:38.000000000 +0100
++++ modified	2016-11-17 21:19:16.000000000 +0100
+@@ -15,6 +15,9 @@
+ 	// Set up the WordPress query.
+ 	wp();
+ 
++	// Force users to be authenticated
++	if (!is_user_logged_in()) auth_redirect();
++
+ 	// Load the theme template.
+ 	require_once( ABSPATH . WPINC . '/template-loader.php' );
+ 
